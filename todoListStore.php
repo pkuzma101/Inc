@@ -1,6 +1,6 @@
 <?
 
-require_once('../inc/filestore.php')
+require_once('../inc/filestore.php');
 
 class TodoList extends Filestore {
 
@@ -12,12 +12,8 @@ class TodoList extends Filestore {
 		$this->filename = 'data/' . $filename;
 	}
 
-	public function sanitize() {
-		return $this->sanitize();
-	}
-
-	public function saveFile() {
-		return $this->writeLines();
+	public function saveFile($array) {
+		return $this->writeLines($array);
 	    }
 
 	public function openFile() {

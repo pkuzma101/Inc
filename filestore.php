@@ -34,7 +34,7 @@
      /**
       * Writes each element in $array to a new line in $this->filename
       */
-     function writeLines($array) {
+     function writeLines() {
      	$array = $this->sanitize($this->items);
 	    $handle = fopen($this->filename, "w");
 	    $string = implode("\n", $this->items);
