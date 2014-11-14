@@ -2,8 +2,13 @@
 
 require_once('../inc/filestore.php');
 
-class addressDataStore extends Filestore {
+class AddressDataStore extends Filestore {
 public $filename = '';
+
+	function __construct($filename = '') {
+		$newTitle = strtolower($filename);
+		parent:: __construct($newTitle);	
+	}
 
 	public $addresses = [];
 
