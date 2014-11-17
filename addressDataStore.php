@@ -14,12 +14,12 @@ public $filename = '';
 
 	public function readAddressBook() {
 		// set $this->addresses to readCSV();
-		$this->addresses = $this->readCSV();
+		$this->addresses = $this->read();
 	}
 
 	public function writeAddressBook() {
 		// pass $this->addresses to writeCSV()
-		return $this->writeCSV($this->addresses);
+		return $this->write($this->addresses);
 	}		
 }
 

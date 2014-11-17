@@ -36,7 +36,7 @@
 	    } else {
 	    	return ['test'];
 	    }
-     }
+    }
 
     public function sanitize($array) {
 		foreach ($array as $key => $value) {
@@ -58,7 +58,7 @@
 	        fwrite($handle, $string);
 	        // Closes the Todo List text file
 	        fclose($handle);
-     }
+    }
      /**
       * Reads contents of csv $this->filename, returns an array
       */
@@ -79,7 +79,7 @@
 		} 
 
 		return $addresses;
-     }
+    }
 
      /**
       * Writes contents of $array to csv $this->filename
@@ -90,7 +90,7 @@
 			fputcsv($handle, $row);
 		}
 		fclose($handle);
-     }
+    }
 
      public function read() {
     	if($this->isCSV == true) {
