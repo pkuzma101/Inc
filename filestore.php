@@ -124,6 +124,8 @@
     }
  }
 
+ class InvalidInputException extends Exception { }
+
  	
 
 ?>
